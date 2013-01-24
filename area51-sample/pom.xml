@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.p13.magk.area51</groupId>
+  <artifactId>area51-sample</artifactId>
+  <version>1</version>
+  
+  
+  <dependencies>
+
+<!--    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.4</version>
+      <scope>provided</scope>
+    </dependency> -->
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
+    </dependency>
+
+      <dependency>
+        <groupId>org.jvnet.hudson.main</groupId>
+        <artifactId>hudson-test-harness</artifactId>
+        <version>1.248</version>
+      <scope>test</scope>
+      </dependency>
+
+<!-- 
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+      <version>1.8.5</version>
+      <scope>test</scope>
+    </dependency> -->
+
+  </dependencies>  
+
+  <repositories>
+    <repository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </repository>
+    <repository>
+       <id>powermock-repo</id>
+       <url>http://powermock.googlecode.com/svn/repo/</url>
+    </repository>
+    <repository>
+       <id>maven2-repository.dev.java.net</id>
+       <name>Java.net repository for Maven2</name>
+       <url>http://download.java.net/maven/2/</url>
+    </repository>
+    <repository>
+       <id>repo1.maven.org</id>
+       <name>Repo 1 Maven.org</name>
+       <url>http://repo1.maven.org/maven2/</url>
+    </repository>
+
+ <repository>
+            <id>openqa-releases</id>
+            <name>OpenQA Releases</name>
+            <url>http://archiva.openqa.org/repository/releases/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>openqa-snapshots</id>
+            <name>OpenQA Snapshots</name>
+            <url>http://archiva.openqa.org/repository/snapshots/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>  
+
+  </repositories>
+
+</project>
+  
